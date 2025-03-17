@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Fanel\\OneDrive - unibuc.ro\\Desktop\\Git_Repos\\Solar_System_OOP\\SolarSystemProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A0617EC7-0D1D-43F1-9B05-0722EA34BC1F}|SolarSystemProject\\SolarSystemProject.vcxproj|C:\\Users\\Fanel\\OneDrive - unibuc.ro\\Desktop\\Git_Repos\\Solar_System_OOP\\SolarSystemProject\\SolarSystemProject\\SolarSystemProject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A0617EC7-0D1D-43F1-9B05-0722EA34BC1F}|SolarSystemProject\\SolarSystemProject.vcxproj|solutionrelative:SolarSystemProject\\SolarSystemProject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SolarSystemProject.cpp",
+              "DocumentMoniker": "C:\\Users\\Fanel\\OneDrive - unibuc.ro\\Desktop\\Git_Repos\\Solar_System_OOP\\SolarSystemProject\\SolarSystemProject\\SolarSystemProject.cpp",
+              "RelativeDocumentMoniker": "SolarSystemProject\\SolarSystemProject.cpp",
+              "ToolTip": "C:\\Users\\Fanel\\OneDrive - unibuc.ro\\Desktop\\Git_Repos\\Solar_System_OOP\\SolarSystemProject\\SolarSystemProject\\SolarSystemProject.cpp",
+              "RelativeToolTip": "SolarSystemProject\\SolarSystemProject.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-17T20:19:02.333Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
