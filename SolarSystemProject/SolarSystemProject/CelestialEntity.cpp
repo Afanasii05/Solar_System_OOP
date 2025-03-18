@@ -13,3 +13,22 @@ void CelestialEntity::setType(std::string type)
 {
 	this->type = type;
 }
+
+void CelestialEntity::CheckVelocitybyType()
+{
+	if (type == "Sun") {
+		if (initialVelocity > 25) {
+			std::cout << "The velocity of the sun is too high\nit will be set to 25(it's max velocity)" << std::endl;
+			initialVelocity = 25;
+		}
+		else {
+			std::cout << "The velocity of the sun is normal" << std::endl;
+		}
+	}
+}
+CelestialEntity::~CelestialEntity()
+{
+	std::cout << "CelestialEntity destroyed" << std::endl;
+}
+
+

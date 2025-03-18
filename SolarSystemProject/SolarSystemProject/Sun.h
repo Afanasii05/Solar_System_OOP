@@ -10,6 +10,9 @@ private:
 
 public:
 	Sun(int size, float positions[2],float initialVelocity, int temperature,std::string color,std::string name);
+	bool checkTemperature() override;
+	void increaseTemperature() override;
+    int getTemperature() const;
 	~Sun();
 };
 
