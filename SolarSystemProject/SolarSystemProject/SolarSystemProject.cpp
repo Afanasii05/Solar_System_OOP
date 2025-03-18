@@ -1,6 +1,11 @@
 #include <iostream>
+#include "CelestialEntity.h"
+#include "Sun.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	float positions[2] = { 0,0 };
+	Sun newsun(10, positions, 0, 10000, "yellow", "Marinica");
+
+	return 0;
 }
