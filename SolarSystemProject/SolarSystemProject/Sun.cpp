@@ -1,16 +1,17 @@
 #include "Sun.h"
 #include <string>
 #include "CelestialEntity.h"
+#include "SolarSpace.h"
 #include <iostream>
 
-Sun::Sun(int size, float positions[2], float initialVelocity, int temperature, std::string color, std::string name) :CelestialEntity(size, positions, initialVelocity) {
+Sun::Sun(int size, int positions[2], float initialVelocity, int temperature, std::string color, std::string name) :CelestialEntity(size, positions, initialVelocity) {
 	this->temperature = temperature;
 	this->color = color;
 	this->name = name;
 	std::cout << "Sun " << name << " created" << std::endl;
 	setType("Sun");
-
 }
+
 bool Sun::checkTemperature(){
 	if(temperature >10000){
 		std::cout << "The temperature of the sun " << name << " is too high\nIt exploded and destroyed everything in the area"<<std::endl;

@@ -2,6 +2,7 @@
 #include "CelestialEntity.h"
 #include "Sun.h"
 #include "Planet.h"
+#include "SolarSpace.h"
 #include <chrono>
 #include <thread>
 #include <vector>
@@ -19,11 +20,16 @@ void update(std::vector<CelestialEntity*>& entities)
 int main()
 {
 	const double timestep = 0.1;
-	float positions[2] = {0,0};
-	Sun* newsun= new Sun(10, positions, 0, 900, "yellow", "Marinica");
-	Planet* newplanet = new Planet(5, positions, 0, true, "Earth", (int)(newsun->getTemperature()*0.1),44);
-	Planet* newplanet2 = new Planet(5, positions, 0, true, "Mars", (int)(newsun->getTemperature() * 0.2), 100);
-	Planet* newplanet3 = new Planet(5, positions, 0, true, "Venus", (int)(newsun->getTemperature() * 0.01), 30);
+	int positions[2] = {-12,10};
+	SolarSpace space(31, 31);
+
+	Sun* newsun= new Sun(3, positions, 0, 900, "yellow", "Marinica");
+	space.addSun(positions, newsun->getSize());
+
+	space.display();
+	Planet* newplanet = new Planet(1, positions, 0, true, "Earth", 4);
+	Planet* newplanet2 = new Planet(2, positions, 0, true, "Mars", 10);
+	Planet* newplanet3 = new Planet(2, positions, 0, true, "Venus", 30);
     std::vector<CelestialEntity*> entities;
 	entities.push_back(newsun);
 	entities.push_back(newplanet);

@@ -1,7 +1,7 @@
 #include "CelestialEntity.h"
 #include <iostream>
 #include <string>
-CelestialEntity::CelestialEntity(int size, float position[2], float initialVelocity)
+CelestialEntity::CelestialEntity(int size, int position[2], float initialVelocity)
 {
 	this->size = size;
 	this->position[0] = position[0];
@@ -12,6 +12,10 @@ CelestialEntity::CelestialEntity(int size, float position[2], float initialVeloc
 void CelestialEntity::setType(std::string type)
 {
 	this->type = type;
+}
+int CelestialEntity::getSize() const
+{
+	return size;
 }
 
 void CelestialEntity::CheckVelocitybyType()
