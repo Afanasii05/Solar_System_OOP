@@ -1,48 +1,71 @@
-
 #include "SolarSpace.h"
-#include "Sun.h"
-SolarSpace::SolarSpace(int size_x, int size_y)
+#include <cmath>
+
+std::vector<Sun*> SolarSpace::suns;
+std::vector<Planet*> SolarSpace::planets;
+
+std::tuple<int, int> SolarSpace::getSpaceSize()
 {
-	this->size_x = size_x;
-	this->size_y = size_y;
-	vectSpace.resize(size_x);
-	for (int i = 0; i < size_x; ++i) 
-		vectSpace[i].resize(size_y);
+	return {size_x, size_y};
 }
 
-void SolarSpace::addSun(int positions[2],int size)
+void SolarSpace::addSun(Sun* sun)
 {
-	int pos_x = size_x / 2 + positions[0]-size;
-	int pos_y = size_y / 2 + positions[1]-size;
-	int end_x = pos_x + 2 * size + 1;
-	int end_y = pos_y + 2 * size + 1;
-	
-	
-
-	if(checkPositions(pos_x,pos_y,end_x,end_y,size))
-		for (int row = pos_x;row < end_x;row++)
-			for (int col = pos_y;col < end_y;col++)
-				vectSpace[row][col] = 1;
-	else
-		std::cout << "There is not enough space for the sun\n";
-	
-	
+	suns.push_back(sun);
 }
-bool SolarSpace::checkPositions(int pos_x,int pos_y,int end_x,int end_y, int size)
+
+void SolarSpace::addPlanet(Planet* planet)
 {
-	for (int row = pos_x;row < end_x;row++)
-		for (int col = pos_y;col < end_y;col++)
-			if (vectSpace[row][col] != 0)
-				return false;
-	return true;
+	planets.push_back(planet);
+}
+
+std::vector<sf::CircleShape> SolarSpace::createSpriteSun()
+{
+	std::vector<sf::CircleShape> sunSprites;
+	for (auto sun : suns) 
+		sunSprites.push_back(createSpriteEntity(sun));
+	return sunSprites;
 
 }
-void SolarSpace::display() {
-	for (short iterator = 0;iterator < size_x;iterator++)
-	{
-		for (short iterator2 = 0; iterator2 < size_y; iterator2++)
-			std::cout << vectSpace[iterator][iterator2]<<' ';
-		std::cout << '\n';
+Sun* SolarSpace::findClosestEntity() {
+	Sun* clossestSun = nullptr;
+	for (auto planet : planets) {
+		auto [x_planet, y_planet] = planet->getPosition();
+		std::string nume_soare;
+		float min = 100000000000000;
+		for (auto sun : suns) {
+			auto [x_sun, y_sun] = sun->getPosition();
+			float distance = sqrt(pow(x_planet-x_sun,2)+pow(y_planet-y_sun,2)) +planet->getSize()/2+sun->getSize()/2;
+			if (distance < min) {
+				min = distance;
+				clossestSun = sun;
+			}
+		}
+		return clossestSun;
 	}
 }
+std::vector<sf::CircleShape> SolarSpace::createSpritePlanets()
+{
+	std::vector<sf::CircleShape> planetSprites;
+	for (auto planet : planets) 
+		planetSprites.push_back(createSpriteEntity(planet));
+	return planetSprites;
+}
+
+sf::CircleShape SolarSpace::createSpriteEntity(CelestialEntity* entity)
+{
+		auto [x,y] = entity->getPosition();
+		auto [width, height] = SolarSpace::getSpaceSize();
+		sf::CircleShape entitySprite(entity->getSize());
+		entitySprite.setPosition(sf::Vector2f(static_cast<float>(x), static_cast<float>(y)));
+		entitySprite.setOrigin(entitySprite.getGeometricCenter());
+		if (entity->getType() == "Sun")
+			entitySprite.setFillColor(sf::Color::Yellow);
+		else if (entity->getType() == "Planet")
+			entitySprite.setFillColor(sf::Color::Blue);
+		return entitySprite;
+	
+}
+
+
 SolarSpace::~SolarSpace() {};

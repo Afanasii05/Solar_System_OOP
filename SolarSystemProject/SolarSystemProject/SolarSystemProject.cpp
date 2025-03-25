@@ -1,53 +1,85 @@
 #include <iostream>
 #include "CelestialEntity.h"
 #include "Sun.h"
+#include "CameraMovement.h"
 #include "Planet.h"
 #include "SolarSpace.h"
 #include <chrono>
 #include <thread>
 #include <vector>
-void update(std::vector<CelestialEntity*>& entities) 
-{
-	for (auto entity : entities) {
-		entity->increaseTemperature();
-		if (entity->checkTemperature()) {
-			delete entity;
-			entities.erase(std::remove(entities.begin(), entities.end(), entity), entities.end());
-		}
-	}
-	
-}
+#include <SFML/Window.hpp>
+#include <SFML/Window/VideoMode.hpp>
+#include <SFML/System.hpp>
+#include <SFML/Audio.hpp>
+#include <SFML/Network.hpp>
+#include <cstdlib>
+#include <ctime>
+
+#include <SFML/Graphics.hpp>
+
 int main()
 {
 	const double timestep = 0.1;
-	int positions[2] = {-12,10};
-	SolarSpace space(31, 31);
+	float p1[2] = {0,0};
+	float p2[2] = { 320,180 };
+	float p3[2] = { 700,320 };
+	
+	SolarSpace space;
 
-	Sun* newsun= new Sun(3, positions, 0, 900, "yellow", "Marinica");
-	space.addSun(positions, newsun->getSize());
-
-	space.display();
-	Planet* newplanet = new Planet(1, positions, 0, true, "Earth", 4);
-	Planet* newplanet2 = new Planet(2, positions, 0, true, "Mars", 10);
-	Planet* newplanet3 = new Planet(2, positions, 0, true, "Venus", 30);
+	Sun* newsun= new Sun(110, p1, 0, 900, "yellow", "Marinica");
+	
+	Planet* newplanet = new Planet(15, p2, 0, true, "Marinica", 100);
+	Planet* newplanet2 = new Planet(30, p3, 0, true, "Marinica2", 100);
+	
+	CameraMovement camera;
     std::vector<CelestialEntity*> entities;
 	entities.push_back(newsun);
 	entities.push_back(newplanet);
-	entities.push_back(newplanet2);
-	entities.push_back(newplanet3);
-	while (!entities.empty()) {
-        auto start = std::chrono::high_resolution_clock::now();
+	space.findClosestEntity();
 
-        update(entities);
+	space.setInitialVelocity(newplanet, 10.0f);
+	space.setInitialVelocity(newplanet2, 17.0f);
+	unsigned int width = 640,height=360;
+	float deltaTime = 0.1f;
+	sf::RenderWindow* window = new sf::RenderWindow(sf::VideoMode({ width,height }), "CACA");
+	sf::View view;
+	view.setCenter({ 320.f, 180.f });
+	view.setSize({ 640.f, 360.f });
+	window->setFramerateLimit(60);
+	window->setView(view);
+	while (window->isOpen()) {
+		
+		while (const std::optional event = window->pollEvent()) {
+			if (event->is < sf::Event::Closed>()) {
+				window->close();
+			}
+			const auto* mouseWheelScrolled = event->getIf<sf::Event::MouseWheelScrolled>();
+			if ( mouseWheelScrolled && mouseWheelScrolled->wheel == sf::Mouse::Wheel::Vertical) // check if the event is a mouse wheel scrolled event
+					if (mouseWheelScrolled->delta> 0)
+						view.zoom(0.95f);  // Zoom in
+					else
+						view.zoom(1.15f);  // Zoom out
 
-        auto end = std::chrono::high_resolution_clock::now();
-        std::chrono::duration<double> elapsed = end - start;
-        double sleepTime = timestep - elapsed.count();
+					window->setView(view);
+			
+		}
+		view.move(camera.GetInput());
+		window->setView(view);
+		space.updatePlanets(deltaTime);
+		window->clear();
+		for (sf::CircleShape sp : space.createSpriteSun()) {
+			window->draw(sp);
+		}
+		for (sf::CircleShape sp : space.createSpritePlanets()) {
+			window->draw(sp);
+		}
+		
+		window->display();
 
-        if (sleepTime > 0) {
-            std::this_thread::sleep_for(std::chrono::duration<double>(sleepTime));
-        }
-    }
+	}
+	for (auto obj : entities) {
+		delete obj;
+	}
 
 	return 0;
 }

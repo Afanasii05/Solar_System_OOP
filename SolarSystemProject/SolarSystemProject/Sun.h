@@ -7,12 +7,16 @@ private:
 	int temperature;
 	std::string color;
 	std::string name;
+	float density = 10000;
 
 public:
-	Sun(int size, int positions[2],float initialVelocity, int temperature,std::string color,std::string name);
+	Sun(float size, float positions[2],float initialVelocity, int temperature,std::string color,std::string name);
 	bool checkTemperature() override;
 	void increaseTemperature() override;
-    int getTemperature() const;
+	std::string getName() { return name; }
+	float getMass() { return size * density; }
+
+
 	~Sun();
 };
 
