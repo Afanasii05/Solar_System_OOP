@@ -1,16 +1,13 @@
 #include "Sun.h"
 #include <string>
 #include "CelestialEntity.h"
-#include "SolarSpace.h"
 #include <iostream>
 
-Sun::Sun(float size, float positions[2], float initialVelocity, int temperature, std::string color, std::string name) :CelestialEntity(size, positions, initialVelocity) {
+Sun::Sun(float size, int temperature, std::string name) : CelestialEntity(size) {
 	this->temperature = temperature;
-	this->color = color;
 	this->name = name;
 	std::cout << "Sun " << name << " created" << std::endl;
 	setType("Sun");
-	SolarSpace::addSun(this);
 }
 
 bool Sun::checkTemperature(){
@@ -19,10 +16,6 @@ bool Sun::checkTemperature(){
 		return true;
 	}
 	return false;
-}
-void Sun::increaseTemperature() {
-	temperature+=2;
-	std::cout<<"Sun " << name << ": " << temperature << '\n';
 }
 
 

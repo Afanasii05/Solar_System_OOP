@@ -5,20 +5,25 @@ class CelestialEntity
 {
 protected:	
 	float size;
-	float position[2];
-	float initialVelocity;
-
+	float position[2] = {0.f, 0.f};
 	std::string type="unknown";
+	sf::Vector2f velocity = { 0.f, 0.f };
 public:
-	CelestialEntity(float size, float position[2], float initialVelocity);
+	CelestialEntity(float size);
 	virtual ~CelestialEntity();
+
 	void setType(std::string type);
-	void CheckVelocitybyType();
+	std::string getType() {return type;}
+
 	float getSize() const;
-	sf::Vector2f getPosition() const { return { position[0],position[1]}; }
+
+	sf::Vector2f getPosition() const { return  { position[0],position[1]}; }
+	void setPosition(sf::Vector2f pos) { position[0] = pos.x;position[1] = pos.y; }
+
+
+	void setVelocity(sf::Vector2f vel) { velocity = vel; }
+	sf::Vector2f getVelocity() { return velocity; }
 	virtual bool checkTemperature() = 0;
-	virtual void increaseTemperature() = 0;
-	std::string getType() { return type; }
-    void setPosition(sf::Vector2f pos) { position[0] = pos.x; position[1] = pos.y; }
+	virtual float getMass() = 0;
 };
 

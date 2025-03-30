@@ -2,13 +2,12 @@
 #include "Sun.h"
 #include <iostream>
 #include "SolarSpace.h"
-Planet::Planet(float size, float positions[2], float initialVelocity, bool habitable, std::string name,float distance_from_sun) :CelestialEntity(size, positions, initialVelocity) {
+Planet::Planet(float size, bool habitable, std::string name,int orbitingSun) : CelestialEntity(size) {
 	this ->habitable = habitable;
+	this->orbitingSun = orbitingSun;
 	this->name = name;
-	this->distance_from_sun = distance_from_sun;
 	std::cout << "Planet " << name << " created" << std::endl;
 	setType("Planet");
-	SolarSpace::addPlanet(this);
 }
 bool Planet::checkTemperature()
 {
@@ -18,16 +17,10 @@ bool Planet::checkTemperature()
 	}
 	return false;
 }
-void Planet::increaseTemperature() {
-	temperature += distance_from_sun/100;
-	std::cout <<"Planet " <<name<<": " << temperature << '\n';
-}
 
-
-void Planet::setTemperature()
+void Planet::setTemperature(float temperature)
 {
-	temperature = distance_from_sun / 100;
-	std::cout << "Planet " << name << ": " << temperature << '\n';
+	this->temperature = temperature ;
 }
 
 

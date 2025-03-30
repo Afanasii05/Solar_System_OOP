@@ -1,4 +1,42 @@
-﻿  SolarSystemProject.cpp
+﻿  CelestialEntity.cpp
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\External\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
+  (compiling source file 'CelestialEntity.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\stdexcept(100,19):
+      see declaration of 'std::runtime_error'
+      C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\External\include\SFML\System\Exception.hpp(41,23):
+      see declaration of 'sf::Exception'
+  
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SolarSpace.h(25,38): warning C4305: 'initializing': truncation from 'double' to 'const float'
+  (compiling source file 'CelestialEntity.cpp')
+  
+  Planet.cpp
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\External\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
+  (compiling source file 'Planet.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\stdexcept(100,19):
+      see declaration of 'std::runtime_error'
+      C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\External\include\SFML\System\Exception.hpp(41,23):
+      see declaration of 'sf::Exception'
+  
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SolarSpace.h(25,38): warning C4305: 'initializing': truncation from 'double' to 'const float'
+  (compiling source file 'Planet.cpp')
+  
+  SolarSpace.cpp
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\External\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
+  (compiling source file 'SolarSpace.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\stdexcept(100,19):
+      see declaration of 'std::runtime_error'
+      C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\External\include\SFML\System\Exception.hpp(41,23):
+      see declaration of 'sf::Exception'
+  
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SolarSpace.h(25,38): warning C4305: 'initializing': truncation from 'double' to 'const float'
+  (compiling source file 'SolarSpace.cpp')
+  
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SolarSpace.cpp(50,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SolarSpace.cpp(59,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SolarSpace.cpp(74,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SolarSpace.cpp(129,28): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SolarSpace.cpp(158,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  SolarSystemProject.cpp
 C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\External\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
   (compiling source file 'SolarSystemProject.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\stdexcept(100,19):
@@ -6,10 +44,20 @@ C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSyst
       C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\External\include\SFML\System\Exception.hpp(41,23):
       see declaration of 'sf::Exception'
   
-C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SolarSpace.h(19,38): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SolarSpace.h(25,38): warning C4305: 'initializing': truncation from 'double' to 'const float'
   (compiling source file 'SolarSystemProject.cpp')
   
-C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SolarSpace.h(36,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'SolarSystemProject.cpp')
+  Sun.cpp
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\External\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
+  (compiling source file 'Sun.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\stdexcept(100,19):
+      see declaration of 'std::runtime_error'
+      C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\External\include\SFML\System\Exception.hpp(41,23):
+      see declaration of 'sf::Exception'
   
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SolarSpace.h(25,38): warning C4305: 'initializing': truncation from 'double' to 'const float'
+  (compiling source file 'Sun.cpp')
+  
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\Sun.cpp(7,22): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Generating Code...
   SolarSystemProject.vcxproj -> C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\Debug\SolarSystemProject.exe
