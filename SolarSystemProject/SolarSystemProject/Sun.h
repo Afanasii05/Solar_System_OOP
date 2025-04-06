@@ -5,20 +5,17 @@
 class Sun:public CelestialEntity
 {
 private:
-	float temperature;
-	std::string color;
-	std::string name;
-	float density = 695000;
+	float density = 895000;
+
 	
 public:
-	Sun(float size, int temperature,std::string name);
+	Sun(float size, std::string name, std::string color, SolarSpace* space);
 
-	bool checkTemperature() override;
-	std::string getName() { return name; }
+	//functii get
 	float getMass() override { return size * density; }
 	float getTemperature() { return temperature; }
 	void increaseTemperature() { temperature += 10; }
-	
+	bool checkTemperature() override;
 
 	~Sun();
 };

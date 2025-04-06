@@ -36,6 +36,18 @@
     <ClCompile Include="CameraMovement.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BlackHole.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Asteroid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SolarSpace.h">
@@ -53,9 +65,36 @@
     <ClInclude Include="CameraMovement.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BlackHole.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Asteroid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemGenerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\..\..\..\..\Pictures\Saved Pictures\footer-background.jpg">
+    <Image Include="footer-background.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="sunTexture.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="blackHoleTexture.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="planetTexture.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="spaceTexture1.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="spaceTexture2.jpg">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

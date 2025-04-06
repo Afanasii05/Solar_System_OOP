@@ -2,12 +2,11 @@
 #include "Sun.h"
 #include <iostream>
 #include "SolarSpace.h"
-Planet::Planet(float size, bool habitable, std::string name,int orbitingSun) : CelestialEntity(size) {
-	this ->habitable = habitable;
-	this->orbitingSun = orbitingSun;
-	this->name = name;
-	std::cout << "Planet " << name << " created" << std::endl;
+Planet::Planet(float size, std::string name, std::string color, SolarSpace* space) : CelestialEntity(size,name,color) {
+
+	space->addPlanet(this);
 	setType("Planet");
+	std::cout << "CreatedPlanet\n";
 }
 bool Planet::checkTemperature()
 {

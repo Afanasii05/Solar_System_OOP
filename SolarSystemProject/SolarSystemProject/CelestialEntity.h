@@ -1,29 +1,29 @@
 #pragma once
 #include<string>
-#include <SFML/Graphics.hpp>
+#include <SFML/System/Vector2.hpp>
 class CelestialEntity
 {
-protected:	
-	float size;
-	float position[2] = {0.f, 0.f};
-	std::string type="unknown";
+protected:
+	float size, position[2] = { 0.f, 0.f }, temperature = 20.f;
+	std::string type = "unknown", name, color;
 	sf::Vector2f velocity = { 0.f, 0.f };
 public:
-	CelestialEntity(float size);
+	CelestialEntity(float size, std::string name, std::string color);
 	virtual ~CelestialEntity();
 
 	void setType(std::string type);
-	std::string getType() {return type;}
+	std::string getType() { return type; }
 
 	float getSize() const;
+	void setSize(float size);
 
-	sf::Vector2f getPosition() const { return  { position[0],position[1]}; }
+	sf::Vector2f getPosition() const { return  { position[0],position[1] }; }
 	void setPosition(sf::Vector2f pos) { position[0] = pos.x;position[1] = pos.y; }
-
+	std::string getName() const { return name; }
 
 	void setVelocity(sf::Vector2f vel) { velocity = vel; }
-	sf::Vector2f getVelocity() { return velocity; }
+	sf::Vector2f getVelocity() const { return velocity; }
 	virtual bool checkTemperature() = 0;
 	virtual float getMass() = 0;
+	std::string getColor() { return color; }
 };
-

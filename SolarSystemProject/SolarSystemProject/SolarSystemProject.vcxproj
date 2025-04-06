@@ -135,22 +135,35 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Asteroid.cpp" />
+    <ClCompile Include="BlackHole.cpp" />
     <ClCompile Include="CameraMovement.cpp" />
     <ClCompile Include="CelestialEntity.cpp" />
+    <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="Planet.cpp" />
     <ClCompile Include="SolarSpace.cpp" />
     <ClCompile Include="SolarSystemProject.cpp" />
     <ClCompile Include="Sun.cpp" />
+    <ClCompile Include="SystemGenerator.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Asteroid.h" />
+    <ClInclude Include="BlackHole.h" />
     <ClInclude Include="CameraMovement.h" />
     <ClInclude Include="CelestialEntity.h" />
+    <ClInclude Include="GameManager.h" />
     <ClInclude Include="Planet.h" />
     <ClInclude Include="SolarSpace.h" />
     <ClInclude Include="Sun.h" />
+    <ClInclude Include="SystemGenerator.h" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\..\..\..\..\Pictures\Saved Pictures\footer-background.jpg" />
+    <Image Include="blackHoleTexture.jpg" />
+    <Image Include="footer-background.jpg" />
+    <Image Include="planetTexture.jpg" />
+    <Image Include="spaceTexture1.jpg" />
+    <Image Include="spaceTexture2.jpg" />
+    <Image Include="sunTexture.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

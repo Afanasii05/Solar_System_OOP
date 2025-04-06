@@ -1,7 +1,6 @@
 #pragma once
 #include <string>
 #include "CelestialEntity.h"
-#include <SFML/Graphics.hpp>
 
 // Forward declaration of SolarSpace
 class SolarSpace;
@@ -9,20 +8,19 @@ class SolarSpace;
 class Planet : public CelestialEntity
 {
 private:
-    bool habitable;
-    std::string name;
-    float temperature = 0;
-    int orbitingSun = 0;
-
     float density = 10200;
+	float health = 100;
+    
 
 public:
-    Planet(float size, bool habitable, std::string name,int orbitingSun);
-    bool checkTemperature() override;
-    float getTemperature() const { return temperature; }
-    void setTemperature(float temperature);
-    std::string getName() { return name; }
+    Planet(float size, std::string name, std::string color, SolarSpace* space);
+
+    //functii get
     float getMass() override { return size * density; }
-    int getOrbitingSunIndex() const{ return orbitingSun; }
+    bool checkTemperature() override;
+    void setTemperature(float temperature);
+	float getHealth() { return health; }
+	void setHealth(float health) { this->health = health; }
+
     ~Planet();
 };
