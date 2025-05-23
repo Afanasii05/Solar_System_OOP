@@ -13,15 +13,14 @@ class SolarSpace;
 class GameManager
 {
 private:
-	int frame_rate = 60;
-	float gameSpeed = 100,speed=0.1;
-	const  double timestep = 0.1;
-	unsigned int gameTick = 0;
-	const  unsigned int width = 1920, height = 1080;
+	int frame_rate = 60; //frame-uri pe secunda
+	
+	unsigned int gameTick = 0; //Tick pt spawn al asteroizilor
+	static const  unsigned int width = 1920, height = 1080; // marimea ferestrei
 
 	
 public:
-	void action(SolarSpace* space);
+	void action(SolarSpace* space); // game - loop, afiseaza un SolarSpace
 
 };
 

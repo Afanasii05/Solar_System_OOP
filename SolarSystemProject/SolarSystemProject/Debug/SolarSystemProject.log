@@ -1,4 +1,12 @@
-﻿  SolarSpace.cpp
+﻿  CelestialEntity.cpp
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\External\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
+  (compiling source file 'CelestialEntity.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\stdexcept(100,19):
+      see declaration of 'std::runtime_error'
+      C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\External\include\SFML\System\Exception.hpp(41,23):
+      see declaration of 'sf::Exception'
+  
+  SolarSpace.cpp
 C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\External\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
   (compiling source file 'SolarSpace.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\stdexcept(100,19):
@@ -6,12 +14,79 @@ C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSyst
       C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\External\include\SFML\System\Exception.hpp(41,23):
       see declaration of 'sf::Exception'
   
-C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SolarSpace.cpp(48,19): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SolarSpace.cpp(115,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SolarSpace.cpp(147,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SolarSpace.cpp(173,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SolarSpace.cpp(190,28): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SolarSpace.cpp(237,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SolarSpace.cpp(264,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SolarSpace.cpp(295,46): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SolarSpace.cpp(71,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SolarSpace.cpp(103,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SolarSpace.cpp(131,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SolarSpace.cpp(148,24): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SolarSpace.cpp(211,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SolarSpace.cpp(242,46): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+  SolarSystemProject.cpp
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\External\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
+  (compiling source file 'SolarSystemProject.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\stdexcept(100,19):
+      see declaration of 'std::runtime_error'
+      C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\External\include\SFML\System\Exception.hpp(41,23):
+      see declaration of 'sf::Exception'
+  
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\Vec2.h(16,56): warning C4244: 'initializing': conversion from 'float' to 'T', possible loss of data
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\Vec2.h(16,56): warning C4244:         with
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\Vec2.h(16,56): warning C4244:         [
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\Vec2.h(16,56): warning C4244:             T=int
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\Vec2.h(16,56): warning C4244:         ]
+  (compiling source file 'SolarSystemProject.cpp')
+      C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\Vec2.h(16,56):
+      the template instantiation context (the oldest one first) is
+          C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SystemGenerator.h(12,18):
+          see reference to class template instantiation 'Math::Vec2<int>' being compiled
+          C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\Vec2.h(16,9):
+          while compiling class template member function 'Math::Vec2<int>::Vec2(float,float) noexcept'
+  
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\Vec2.h(16,63): warning C4244: 'initializing': conversion from 'float' to 'T', possible loss of data
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\Vec2.h(16,63): warning C4244:         with
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\Vec2.h(16,63): warning C4244:         [
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\Vec2.h(16,63): warning C4244:             T=int
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\Vec2.h(16,63): warning C4244:         ]
+  (compiling source file 'SolarSystemProject.cpp')
+  
+  SystemGenerator.cpp
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\External\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
+  (compiling source file 'SystemGenerator.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\stdexcept(100,19):
+      see declaration of 'std::runtime_error'
+      C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\External\include\SFML\System\Exception.hpp(41,23):
+      see declaration of 'sf::Exception'
+  
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SystemGenerator.cpp(20,22): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SystemGenerator.cpp(24,180): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SystemGenerator.cpp(24,132): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SystemGenerator.cpp(24,85): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SystemGenerator.cpp(24,37): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SystemGenerator.cpp(25,177): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SystemGenerator.cpp(25,129): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SystemGenerator.cpp(25,82): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SystemGenerator.cpp(25,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SystemGenerator.cpp(63,13): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\Vec2.h(16,56): warning C4244: 'initializing': conversion from 'float' to 'T', possible loss of data
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\Vec2.h(16,56): warning C4244:         with
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\Vec2.h(16,56): warning C4244:         [
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\Vec2.h(16,56): warning C4244:             T=int
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\Vec2.h(16,56): warning C4244:         ]
+  (compiling source file 'SystemGenerator.cpp')
+      C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\Vec2.h(16,56):
+      the template instantiation context (the oldest one first) is
+          C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SystemGenerator.h(12,18):
+          see reference to class template instantiation 'Math::Vec2<int>' being compiled
+          C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\Vec2.h(16,9):
+          while compiling class template member function 'Math::Vec2<int>::Vec2(float,float) noexcept'
+              C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\SystemGenerator.h(12,33):
+              see the first reference to 'Math::Vec2<int>::Vec2' in 'SystemGenerator::SystemGenerator'
+  
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\Vec2.h(16,63): warning C4244: 'initializing': conversion from 'float' to 'T', possible loss of data
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\Vec2.h(16,63): warning C4244:         with
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\Vec2.h(16,63): warning C4244:         [
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\Vec2.h(16,63): warning C4244:             T=int
+C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\SolarSystemProject\Vec2.h(16,63): warning C4244:         ]
+  (compiling source file 'SystemGenerator.cpp')
+  
+  Generating Code...
   SolarSystemProject.vcxproj -> C:\Users\Fanel\OneDrive - unibuc.ro\Desktop\Git_Repos\Solar_System_OOP\SolarSystemProject\Debug\SolarSystemProject.exe

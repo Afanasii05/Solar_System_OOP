@@ -4,9 +4,10 @@
 class CelestialEntity
 {
 protected:
-	float size, position[2] = { 0.f, 0.f }, temperature = 20.f;
+	float size, position[2] = { 0.f, 0.f };//pozitia si marimea unui obiect
 	std::string type = "unknown", name, color;
 	sf::Vector2f velocity = { 0.f, 0.f };
+	float density = 0.f;
 public:
 	CelestialEntity(float size, std::string name, std::string color);
 	virtual ~CelestialEntity();
@@ -23,7 +24,6 @@ public:
 
 	void setVelocity(sf::Vector2f vel) { velocity = vel; }
 	sf::Vector2f getVelocity() const { return velocity; }
-	virtual bool checkTemperature() = 0;
 	virtual float getMass() = 0;
 	std::string getColor() { return color; }
 };

@@ -8,7 +8,6 @@ class SolarSpace;
 class Planet : public CelestialEntity
 {
 private:
-    float density = 10200;
 	float health = 100;
     
 
@@ -17,8 +16,6 @@ public:
 
     //functii get
     float getMass() override { return size * density; }
-    bool checkTemperature() override;
-    void setTemperature(float temperature);
 	float getHealth() { return health; }
 	void setHealth(float health) { this->health = health; }
 

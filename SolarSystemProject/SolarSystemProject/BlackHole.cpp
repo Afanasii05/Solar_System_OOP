@@ -1,9 +1,10 @@
 #include "BlackHole.h"
 #include <iostream>
 
-BlackHole::BlackHole(float size, std::string name, std::string color, SolarSpace* space) : CelestialEntity(size, name, color)
+BlackHole::BlackHole(float size, std::string name, std::string color) : CelestialEntity(size, name, color)
 {
-	space->addBlackHole(this);
+	
 	setType("BlackHole");
-	std::cout << "CreatedBlackHole!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n";
+	std::cout << "CreatedBlackHole\n";
+	density = 200000000;//densitate foarte mare
 }

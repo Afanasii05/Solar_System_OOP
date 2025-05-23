@@ -145,6 +145,7 @@
     <ClCompile Include="SolarSystemProject.cpp" />
     <ClCompile Include="Sun.cpp" />
     <ClCompile Include="SystemGenerator.cpp" />
+    <ClCompile Include="TextureManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Asteroid.h" />
@@ -156,6 +157,8 @@
     <ClInclude Include="SolarSpace.h" />
     <ClInclude Include="Sun.h" />
     <ClInclude Include="SystemGenerator.h" />
+    <ClInclude Include="TextureManager.h" />
+    <ClInclude Include="Vec2.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="blackHoleTexture.jpg" />
